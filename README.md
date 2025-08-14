@@ -12,7 +12,7 @@ A short description of your project: what it does and its purpose.
 - Virtual environment (recommended)  
 - Dependencies listed in `requirements.txt`
 
-## Installation
+## Installation and Running
 
 1. **Clone the repository**  
 ```bash
