@@ -16,7 +16,7 @@ A short description of your project: what it does and its purpose.
 
 1. **Clone the repository**  
 ```bash
-git clone https://github.com/your-username/project-name.git
+git clone https://github.com/vishwanathdvgmm/EchoVerse.git
 cd project-name
 
 # On Linux/macOS
