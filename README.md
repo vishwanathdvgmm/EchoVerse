@@ -7,8 +7,6 @@ A short description of your project: what it does and its purpose.
 - [Installation](#installation)
 - [Usage](#usage)
 - [Configuration](#configuration)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Requirements
 
@@ -33,8 +31,9 @@ python -m venv venv
 
 pip install -r requirements.txt
 
-# For running the project
+## Usage
 streamlit run app.py
 
-# Configuration your hugginface Api Key in .env file
+## Configuration
+# Configure your hugginface Api Key in .env file
 API_KEY = "your_api_key_here"
