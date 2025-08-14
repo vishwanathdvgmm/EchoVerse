@@ -1,11 +1,21 @@
 import streamlit as st
 from utils import generate_and_speak
 
-st.set_page_config(page_title="EchoVerse LLM + TTS", page_icon="🗣️", layout="centered")
+st.set_page_config(
+    page_title="EchoVerse LLM + TTS",
+    page_icon="🗣️",
+    layout="centered"
+)
+
 st.title("🗣️ EchoVerse LLM + TTS")
 st.markdown("Enter a prompt and hear the AI speak it back!")
 
-user_input = st.text_area("💬 Enter your prompt:", placeholder="Type something for the AI to say...", height=150)
+user_input = st.text_area(
+    "💬 Enter your prompt:",
+    placeholder="Type something for the AI to say...",
+    height=150
+)
+
 lang_input = st.selectbox("Language", ["en", "hi", "es", "fr"], index=0)
 
 if st.button("🎤 Generate & Speak", use_container_width=True):
@@ -25,6 +35,7 @@ if st.button("🎤 Generate & Speak", use_container_width=True):
             if audio_bytes:
                 st.subheader("🔊 Audio Output")
                 st.audio(audio_bytes, format="audio/mp3")
+
                 st.download_button(
                     label="Download MP3",
                     data=audio_bytes,
