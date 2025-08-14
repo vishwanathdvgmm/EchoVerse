@@ -31,7 +31,7 @@ python -m venv venv
 
 pip install -r requirements.txt
 
-## Usage
+## Installation
 streamlit run app.py
 
 ## Configuration
